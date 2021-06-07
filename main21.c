@@ -13,6 +13,9 @@ int main(){
 
     int (*p2)[3] = {&a,&b,&c};
 
-    printf("%d",*(p1+2));
-    printf("%d",*p2);
+    printf("%d \n",*(p1+2));
+    printf("%p \n",*p2);
+    printf("%p \n",p2);
+    printf("%p \n",&a);
+    printf("%d \n",**p2);
 }

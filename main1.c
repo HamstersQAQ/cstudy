@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 void test01(){
-    int *p;
+    int *p = NULL;
     int a = 10;
     p = &a;
     int *m = &a;
@@ -13,6 +13,8 @@ void test01(){
     printf("--------- %p\n",p);
     printf("--------- %p\n",&p);
     printf("--------- %d\n",*m);
+    printf("--------- %p\n",m);
+    printf("--------- %d\n",*p);
 
 }
 

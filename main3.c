@@ -15,6 +15,8 @@ void test() {
     int m[3] = {a,b,c};
     int *p = &a;
 
+    printf("%p\n", p);
+    printf("%d\n", *p);
     printf("%p\n", m);
     printf("%d\n", *m);
 
@@ -22,8 +24,10 @@ void test() {
     printf("%d\n", *arr[0]);
     printf("%d\n", **arr);
     printf("%p\n", *arr);
+    printf("%d\n", *arr[1]);
+    printf("%p\n", arr[2]);
     char *aa = arr;
-    printf("%p\n", *(int *) aa);
+    printf("%p\n", *(int*)aa);
 }
 
 int main() {
